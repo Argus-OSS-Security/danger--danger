@@ -1,12 +1,13 @@
 name: Release Danger package
 
-on:
-  push:
-    branches:
-      - 'master'
-    tags:
-      - '*'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - 'master'
+#     tags:
+#       - '*'
+# 
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
